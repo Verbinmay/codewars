@@ -1,0 +1,27 @@
+You will be given a table, numbers, with one column number.
+
+Return a table with a column is_even containing "Even" or "Odd" depending on number column values.
+
+numbers table schema
+number INT
+output table schema
+is_even STRING
+
+
+--Write your SQL statement here--
+>select case 
+when 
+mod(abs(number), 2) = 0
+then 'Even'
+when 
+mod(abs(number), 2) = 1
+then 'Odd'
+end
+as is_even
+from numbers
+
+>SELECT
+  CASE WHEN Mod(number,2) = 0 THEN 'Even'
+       ELSE 'Odd' END as is_even
+
+FROM numbers
