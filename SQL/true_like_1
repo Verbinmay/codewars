@@ -1,0 +1,4 @@
+Create a simple SELECT query to display student information of all ACTIVE students.
+
+select 
+Id, FirstName,	LastName,	IsActive from students where IsActive = 1
