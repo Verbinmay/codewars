@@ -1,0 +1,21 @@
+Напишите функцию для преобразования имени в инициалы. Это ката строго состоит из двух слов с одним пробелом между ними.
+
+На выходе должны быть две заглавные буквы с точкой, разделяющей их.
+
+Это должно выглядеть так:
+
+Sam Harris=>S.H
+
+patrick feeney=>P.F
+
+СТРУНЫОСНОВЫ
+
+
+function abbrevName(name){
+  let a = name.split(' ');
+  let n = a[0].split('');
+  let s = a[1].split('');
+  return n[0].toString().toUpperCase() + '.'+ s[0].toString().toUpperCase();
+
+
+}
