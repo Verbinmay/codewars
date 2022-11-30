@@ -1,0 +1,19 @@
+Учитывая строку, вы должны вернуть строку, в которой каждый символ (с учетом регистра) повторяется один раз.
+
+Примеры (ввод -> вывод):
+* "String"      -> "SSttrriinngg"
+* "Hello World" -> "HHeelllloo  WWoorrlldd"
+* "1234!_ "     -> "11223344!!__  "
+Удачи!
+
+function doubleChar(str) {
+ let a = str.split('');
+  let c = [];
+  for (let b = 0; b < a.length; b++ ) {
+    c.push(a[b]);
+    c.push(a[b]);
+  } return c.join("");
+ }
+
+---
+const doubleChar = (str) => str.split("").map(c => c + c).join("");
