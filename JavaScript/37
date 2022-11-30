@@ -1,0 +1,22 @@
+Напишите функцию bmi, которая вычисляет индекс массы тела (bmi = вес / рост 2 ).
+
+если ИМТ <= 18,5, вернуть "Недостаточный вес"
+
+если ИМТ <= 25,0, вернуть «Нормальный»
+
+если ИМТ <= 30,0 вернуть "Избыточный вес"
+
+если ИМТ > 30, верните «Ожирение».
+
+function bmi(weight, height) {
+  let a = weight/ (height*height);
+  if (a<= 18.5) {
+    return  "Underweight";
+  } else if (a<= 25.0) {
+    return  "Normal";
+    } else if (a <= 30.0) {
+    return  "Overweight";
+      } else if (a > 30) {
+    return  "Obese";
+        } ;
+}

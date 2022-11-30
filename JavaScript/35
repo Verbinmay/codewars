@@ -1,0 +1,9 @@
+Напишите функцию, которая вычисляет среднее значение чисел в заданном списке.
+
+Примечание. Пустые массивы должны возвращать 0.
+
+
+function findAverage(array) {
+ const average = array.reduce((a, b) => a + b, 0) / array.length;
+  return array.length != 0 ? average:0;
+}
